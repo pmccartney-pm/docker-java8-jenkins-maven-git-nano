@@ -16,7 +16,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # install the OpenJDK 8 java runtime environment and curl
 RUN apt update; \
   apt upgrade -y; \
-  apt install -y default-jre curl wget git nano; \
+  apt install -y default-jdk curl wget git nano; \
   apt-get clean
 
 ENV JAVA_HOME /usr
